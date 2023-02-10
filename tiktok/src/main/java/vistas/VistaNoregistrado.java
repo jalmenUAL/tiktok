@@ -28,8 +28,6 @@ public class VistaNoregistrado extends LitTemplate {
 	private Element vaadinVerticalLayout;
 	@Id("vaadinHorizontalLayout")
 	private HorizontalLayout vaadinHorizontalLayout;
-	@Id("img")
-	private Image img;
 	@Id("vaadinVerticalLayout1")
 	private Element vaadinVerticalLayout1;
 	@Id("vaadinTextField")
@@ -58,6 +56,8 @@ public class VistaNoregistrado extends LitTemplate {
 	private Button vaadinButton3;
 	@Id("vaadinVerticalLayout3")
 	private Element vaadinVerticalLayout3;
+	@Id("img")
+	private Image img;
 	 
 	 
 	 

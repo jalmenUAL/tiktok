@@ -11,6 +11,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
+import com.vaadin.flow.server.StreamResource;
 
 import vistas.VistaNoregistrado;
 import vistas.VistaPublicacion;
@@ -48,20 +49,33 @@ public class MainView extends VerticalLayout {
     public MainView(@Autowired GreetService service) {
     	
     	
+    	
+    	
         VistaNoregistrado nr = new VistaNoregistrado();
-        nr.getImg().getStyle().set("src", "resources/imagenes/tiktok.png");
+         
+       /* StreamResource imageResource = new StreamResource("tiktok.png",
+                () -> getClass().getResourceAsStream("/imagenes/tiktok.png"));
+        
+        nr.getImg().setSrc(imageResource);*/
     	
     	 VistaPublicacion vp = new VistaPublicacion();
-    	 
+    	 VistaPublicacion vp2 = new VistaPublicacion();
+    	 VistaPublicacion vp3 = new VistaPublicacion();
     	
-    	 Video video = new Video("videos/video_tiktok.mp4");
-    	 video.setClassName("videoInsert"); 
+    	 
+    	 Video video = new Video("videos/tiktok.mp4");
+    	 Video video2 = new Video("videos/tiktok2.mp4");
+    	 Video video3 = new Video("videos/tiktok3.mp4");
+    	  
     	 vp.getDiv().add(video);
-    	 vp.getDiv().setClassName("wrapper");
-    	 vp.setClassName("wrapper");
+    	 vp2.getDiv().add(video2);
+    	 vp3.getDiv().add(video3);
     	  
     	
-         nr.getVaadinVerticalLayout3().as(VerticalLayout.class).add(vp); 	 	 
+         nr.getVaadinVerticalLayout3().as(VerticalLayout.class).add(vp);
+         nr.getVaadinVerticalLayout3().as(VerticalLayout.class).add(vp2);
+         nr.getVaadinVerticalLayout3().as(VerticalLayout.class).add(vp3);
+         
     	 nr.getStyle().set("width","100%");
     	 nr.getStyle().set("height","100%");
     	 

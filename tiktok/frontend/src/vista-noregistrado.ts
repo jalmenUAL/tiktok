@@ -23,7 +23,7 @@ width: 100%;
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;" id="vaadinVerticalLayout">
  <vaadin-horizontal-layout class="header" style="width: 100%; flex-basis: var(--lumo-size-l); flex-shrink: 0; background-color:white;" id="vaadinHorizontalLayout">
-  <img style="flex-grow: 0; flex-shrink: 0; align-self: flex-start; height: 100%; width: 10%;" src="" id="img">
+  <img style="flex-grow: 0; flex-shrink: 0; align-self: flex-start; height: 100%; width: 10%;" src="tiktok.png" id="img">
   <vaadin-vertical-layout theme="spacing" style="flex-grow: 1; align-self: center;" id="vaadinVerticalLayout1">
    <vaadin-text-field placeholder="Buscar Cuentas" style="flex-grow: 0; align-self: center; width: 40%;" id="vaadinTextField">
     <iron-icon icon="lumo:search" slot="prefix" id="ironIcon"></iron-icon>
@@ -44,12 +44,12 @@ width: 100%;
    <vaadin-button style="color:black; background:white; align-self: stretch;" id="vaadinButton2">
     <iron-icon icon="vaadin:users" slot="prefix" style="color:black;" id="icon"></iron-icon>Siguiendo 
    </vaadin-button>
-   <label id="label" style="width: 50%; align-self: stretch;">Inicia sesión para seguir a creadores, dar un me gusta a videos y ver comentarios.</label>
+   <label id="label" style="width: 100%;">Inicia sesión para seguir a creadores, dar un me gusta a videos y ver comentarios.</label>
    <vaadin-button id="vaadinButton3" style="background:white; color:red; border: 2px solid red; align-self: stretch;">
      Iniciar Sesión 
    </vaadin-button>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout class="content" style="flex-grow: 1; flex-shrink: 1; flex-basis: auto;" id="vaadinVerticalLayout3"></vaadin-vertical-layout>
+  <vaadin-vertical-layout class="content" style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; width: 100%; height: 100%;" id="vaadinVerticalLayout3"></vaadin-vertical-layout>
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>
 `;
