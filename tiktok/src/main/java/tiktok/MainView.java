@@ -61,6 +61,8 @@ public class MainView extends VerticalLayout {
     	 VistaPublicacion vp = new VistaPublicacion();
     	 VistaPublicacion vp2 = new VistaPublicacion();
     	 VistaPublicacion vp3 = new VistaPublicacion();
+    	 vp.getStyle().set("width","100%");
+    	  
     	
     	 
     	 Video video = new Video("videos/tiktok.mp4");

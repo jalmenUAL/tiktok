@@ -62,10 +62,10 @@ public class VistaPublicacion extends LitTemplate {
 	private Element ironIcon1;
 	@Id("vaadinVerticalLayoutM")
 	private Element vaadinVerticalLayoutM;
-	@Id("ironIcon2")
-	private Element ironIcon2;
-	@Id("vaadinVerticalLayout4")
-	private Element vaadinVerticalLayout4;
+	//@Id("ironIcon2")
+	//private Element ironIcon2;
+	//@Id("vaadinVerticalLayout4")
+	//private Element vaadinVerticalLayout4;
 	 
 	 
 	 
