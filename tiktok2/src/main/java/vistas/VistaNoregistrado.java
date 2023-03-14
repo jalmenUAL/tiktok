@@ -69,6 +69,7 @@ public class VistaNoregistrado extends LitTemplate {
      * Creates a new VistaNoregistrado.
      */
     public VistaNoregistrado() {
+    	
         // You can initialise any data required for the connected UI components here.
     }
 

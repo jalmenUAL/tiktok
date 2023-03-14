@@ -53,6 +53,7 @@ public class MainView extends VerticalLayout {
 	public MainView(@Autowired GreetService service) {
 
 		VistaNoregistrado nr = new VistaNoregistrado();
+		
 
 		VistaPublicacion vp = new VistaPublicacion();
 		VistaPublicacion vp2 = new VistaPublicacion();
@@ -62,6 +63,7 @@ public class MainView extends VerticalLayout {
 		Video video2 = new Video("videos/tiktok2.mp4");
 		Video video3 = new Video("videos/tiktok3.mp4");
 
+		
 		vp.getDiv().add(video);
 		vp2.getDiv().add(video2);
 		vp3.getDiv().add(video3);
