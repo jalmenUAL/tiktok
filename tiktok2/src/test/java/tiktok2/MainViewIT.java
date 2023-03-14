@@ -1,4 +1,4 @@
-package tiktok;
+package tiktok2;
 
 import com.vaadin.flow.component.textfield.testbench.TextFieldElement;
 import org.junit.Assert;

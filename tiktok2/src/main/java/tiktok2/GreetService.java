@@ -1,4 +1,4 @@
-package tiktok;
+package tiktok2;
 
 import java.io.Serializable;
 

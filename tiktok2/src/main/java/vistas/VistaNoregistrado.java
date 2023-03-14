@@ -11,6 +11,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Label;
 import vistas.VistaPublicacion;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 
 /**
  * A Designer generated component for the vista-noregistrado template.
@@ -54,10 +55,12 @@ public class VistaNoregistrado extends LitTemplate {
 	private Label label;
 	@Id("vaadinButton3")
 	private Button vaadinButton3;
-	@Id("vaadinVerticalLayout3")
-	private Element vaadinVerticalLayout3;
+	 
 	@Id("img")
 	private Image img;
+	 
+	@Id("vaadinVerticalLayout3")
+	private Element vaadinVerticalLayout3;
 	 
 	 
 	 
@@ -189,13 +192,7 @@ public class VistaNoregistrado extends LitTemplate {
 		this.vaadinButton3 = vaadinButton3;
 	}
 
-	public Element getVaadinVerticalLayout3() {
-		return vaadinVerticalLayout3;
-	}
-
-	public void setVaadinVerticalLayout3(Element vaadinVerticalLayout3) {
-		this.vaadinVerticalLayout3 = vaadinVerticalLayout3;
-	}
+	 
 
 	 
 
@@ -207,6 +204,16 @@ public class VistaNoregistrado extends LitTemplate {
 
 	public void setIcon(Element icon) {
 		this.icon = icon;
+	}
+
+	 
+
+	public Element getVaadinVerticalLayout3() {
+		return vaadinVerticalLayout3;
+	}
+
+	public void setVaadinVerticalLayout3(Element vaadinVerticalLayout3) {
+		this.vaadinVerticalLayout3 = vaadinVerticalLayout3;
 	}
 
 }

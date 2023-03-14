@@ -20,10 +20,10 @@ export class VistaPublicacion extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout class="content" style="width: 100%; height: 100%; align-items: stretch;" id="vaadinVerticalLayoutM">
+<vaadin-vertical-layout class="content" style="width: 100%; height: 100%;" id="vaadinVerticalLayoutM">
  <vaadin-horizontal-layout style="width: 100%; height: 100%; align-self: stretch;" id="vaadinHorizontalLayout">
   <vaadin-vertical-layout theme="spacing" style="flex-grow: 1; width: 100%; height: 100%; align-items: stretch;" id="vaadinVerticalLayout">
-   <vaadin-horizontal-layout theme="spacing" id="vaadinHorizontalLayout1" style="align-self: stretch; width: 100%; margin: var(--lumo-space-m); padding: var(--lumo-space-m);">
+   <vaadin-horizontal-layout theme="spacing" id="vaadinHorizontalLayout1" style="width: 100%; margin: var(--lumo-space-m); padding: var(--lumo-space-m); align-self: flex-end;">
     <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout1" style="flex-grow: 0;">
      <vaadin-avatar id="vaadinAvatar" style="align-self: stretch; flex-grow: 0;"></vaadin-avatar>
     </vaadin-vertical-layout>
@@ -32,7 +32,7 @@ export class VistaPublicacion extends LitElement {
      <label style="align-self: stretch; width: 100%;" id="label4">#viral #mds #tiktok #vaadin </label>
     </vaadin-vertical-layout>
    </vaadin-horizontal-layout>
-   <div id="div" style="align-self: stretch; flex-grow: 1;"></div>
+   <div id="div" style="align-self: center; flex-grow: 1;"></div>
   </vaadin-vertical-layout>
   <vaadin-vertical-layout theme="spacing" style="align-self: stretch; flex-grow: 1;" id="vaadinVerticalLayout4">
    <vaadin-vertical-layout theme="spacing" style="flex-grow: 1; flex-shrink: 1; height: 100%; align-items: stretch; align-self: stretch;" id="vaadinVerticalLayout3"></vaadin-vertical-layout>

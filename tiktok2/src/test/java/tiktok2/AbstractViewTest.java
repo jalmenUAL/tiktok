@@ -1,4 +1,4 @@
-package tiktok;
+package tiktok2;
 
 import com.vaadin.flow.theme.AbstractTheme;
 import com.vaadin.testbench.ScreenshotOnFailureRule;

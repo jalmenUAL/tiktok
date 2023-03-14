@@ -49,7 +49,7 @@ width: 100%;
      Iniciar Sesión 
    </vaadin-button>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout class="content" style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; width: 100%; height: 100%;" id="vaadinVerticalLayout3"></vaadin-vertical-layout>
+  <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout3" style="flex-grow: 1; align-items: stretch; flex-direction: column;"></vaadin-vertical-layout>
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>
 `;
