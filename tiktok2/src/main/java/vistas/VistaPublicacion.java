@@ -45,24 +45,31 @@ public class VistaPublicacion extends LitTemplate {
 	private Element vaadinVerticalLayout4;
 	@Id("vaadinVerticalLayout3")
 	private Element vaadinVerticalLayout3;
-	@Id("vaadinButton")
-	private Button vaadinButton;
-	@Id("ironIcon2")
-	private Element ironIcon2;
+	 
 	@Id("label2")
 	private Label label2;
-	@Id("vaadinButton1")
-	private Button vaadinButton1;
+	 
 	@Id("ironIcon")
 	private Element ironIcon;
 	@Id("label")
 	private Label label;
-	@Id("vaadinButton2")
-	private Button vaadinButton2;
+	 
 	@Id("ironIcon1")
 	private Element ironIcon1;
 	@Id("label1")
 	private Label label1;
+	@Id("ironIcon2")
+	private Element ironIcon2;
+	@Id("meGusta")
+	private Button meGusta;
+	@Id("comentario")
+	private Button comentario;
+	@Id("compartir")
+	private Button compartir;
+	@Id("borrar")
+	private Button borrar;
+	@Id("eliminar")
+	private Button eliminar;
 
 	/**
      * Creates a new VistaPublicacion.
@@ -167,14 +174,7 @@ public class VistaPublicacion extends LitTemplate {
 		this.vaadinVerticalLayout3 = vaadinVerticalLayout3;
 	}
 
-	public Button getVaadinButton() {
-		return vaadinButton;
-	}
-
-	public void setVaadinButton(Button vaadinButton) {
-		this.vaadinButton = vaadinButton;
-	}
-
+	 
 	public Element getIronIcon2() {
 		return ironIcon2;
 	}
@@ -191,13 +191,7 @@ public class VistaPublicacion extends LitTemplate {
 		this.label2 = label2;
 	}
 
-	public Button getVaadinButton1() {
-		return vaadinButton1;
-	}
-
-	public void setVaadinButton1(Button vaadinButton1) {
-		this.vaadinButton1 = vaadinButton1;
-	}
+	 
 
 	public Element getIronIcon() {
 		return ironIcon;
@@ -215,13 +209,7 @@ public class VistaPublicacion extends LitTemplate {
 		this.label = label;
 	}
 
-	public Button getVaadinButton2() {
-		return vaadinButton2;
-	}
-
-	public void setVaadinButton2(Button vaadinButton2) {
-		this.vaadinButton2 = vaadinButton2;
-	}
+	 
 
 	public Element getIronIcon1() {
 		return ironIcon1;
@@ -237,6 +225,46 @@ public class VistaPublicacion extends LitTemplate {
 
 	public void setLabel1(Label label1) {
 		this.label1 = label1;
+	}
+
+	public Button getMeGusta() {
+		return meGusta;
+	}
+
+	public void setMeGusta(Button meGusta) {
+		this.meGusta = meGusta;
+	}
+
+	public Button getComentario() {
+		return comentario;
+	}
+
+	public void setComentario(Button comentario) {
+		this.comentario = comentario;
+	}
+
+	public Button getCompartir() {
+		return compartir;
+	}
+
+	public void setCompartir(Button compartir) {
+		this.compartir = compartir;
+	}
+
+	public Button getBorrar() {
+		return borrar;
+	}
+
+	public void setBorrar(Button borrar) {
+		this.borrar = borrar;
+	}
+
+	public Button getEliminar() {
+		return eliminar;
+	}
+
+	public void setEliminar(Button eliminar) {
+		this.eliminar = eliminar;
 	}
 
 }
