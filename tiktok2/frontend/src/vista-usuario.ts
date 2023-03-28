@@ -7,8 +7,8 @@ import '@polymer/iron-icon/iron-icon.js';
 import '@vaadin/vaadin-icons/vaadin-icons.js'; import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js'; import '@vaadin/vaadin-avatar/src/vaadin-avatar.js'; import '@polymer/iron-icon/iron-icon.js'; import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js'; import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 
-@customElement('vista-noregistrado')
-export class VistaNoregistrado extends LitElement {
+@customElement('vista-usuario')
+export class VistaUsuario extends LitElement {
   static get styles() {
     return css`
       :host {

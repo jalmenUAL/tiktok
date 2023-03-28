@@ -68,8 +68,8 @@ public class VistaPublicacion extends LitTemplate {
 	private Button compartir;
 	@Id("borrar")
 	private Button borrar;
-	@Id("eliminar")
-	private Button eliminar;
+	@Id("denunciar")
+	private Button denunciar;
 
 	/**
      * Creates a new VistaPublicacion.
@@ -259,12 +259,14 @@ public class VistaPublicacion extends LitTemplate {
 		this.borrar = borrar;
 	}
 
-	public Button getEliminar() {
-		return eliminar;
+	public Button getDenunciar() {
+		return denunciar;
 	}
 
-	public void setEliminar(Button eliminar) {
-		this.eliminar = eliminar;
+	public void setDenunciar(Button denunciar) {
+		this.denunciar = denunciar;
 	}
+
+	 
 
 }

@@ -10,25 +10,23 @@ import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Label;
-import vistas.VistaPublicacion;
-import com.vaadin.flow.component.orderedlayout.Scroller;
 
 /**
- * A Designer generated component for the vista-noregistrado template.
+ * A Designer generated component for the vista-usuario template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Tag("vista-noregistrado")
-@JsModule("./src/vista-noregistrado.ts")
-public class VistaNoregistrado extends LitTemplate {
+@Tag("vista-usuario")
+@JsModule("./src/vista-usuario.ts")
+public class VistaUsuario extends LitTemplate {
 
-    
-
-	@Id("vaadinVerticalLayout")
+    @Id("vaadinVerticalLayout")
 	private Element vaadinVerticalLayout;
 	@Id("vaadinHorizontalLayout")
 	private HorizontalLayout vaadinHorizontalLayout;
+	@Id("img")
+	private Image img;
 	@Id("vaadinVerticalLayout1")
 	private Element vaadinVerticalLayout1;
 	@Id("vaadinTextField")
@@ -55,21 +53,13 @@ public class VistaNoregistrado extends LitTemplate {
 	private Label label;
 	@Id("vaadinButton3")
 	private Button vaadinButton3;
-	 
-	@Id("img")
-	private Image img;
-	 
 	@Id("vaadinVerticalLayout3")
 	private Element vaadinVerticalLayout3;
-	 
-	 
-	 
 
 	/**
-     * Creates a new VistaNoregistrado.
+     * Creates a new VistaUsuario.
      */
-    public VistaNoregistrado() {
-    	
+    public VistaUsuario() {
         // You can initialise any data required for the connected UI components here.
     }
 
@@ -177,6 +167,14 @@ public class VistaNoregistrado extends LitTemplate {
 		this.vaadinButton2 = vaadinButton2;
 	}
 
+	public Element getIcon() {
+		return icon;
+	}
+
+	public void setIcon(Element icon) {
+		this.icon = icon;
+	}
+
 	public Label getLabel() {
 		return label;
 	}
@@ -192,22 +190,6 @@ public class VistaNoregistrado extends LitTemplate {
 	public void setVaadinButton3(Button vaadinButton3) {
 		this.vaadinButton3 = vaadinButton3;
 	}
-
-	 
-
-	 
-
-	 
-
-	public Element getIcon() {
-		return icon;
-	}
-
-	public void setIcon(Element icon) {
-		this.icon = icon;
-	}
-
-	 
 
 	public Element getVaadinVerticalLayout3() {
 		return vaadinVerticalLayout3;

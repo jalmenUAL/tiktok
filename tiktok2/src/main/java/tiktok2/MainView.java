@@ -19,8 +19,11 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.server.StreamResource;
 
-import vistas.VistaNoregistrado;
-import vistas.VistaPublicacion;
+import interfaz.Lista_publicaciones;
+import interfaz.Lista_publicaciones_item;
+import interfaz.Pagina_login;
+import interfaz.Usuario_no_registrado;
+import interfaz.Usuario_registrado;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -50,9 +53,39 @@ public class MainView extends VerticalLayout {
 	 * @param service The message service. Automatically injected Spring managed
 	 *                bean.
 	 */
-	public MainView(@Autowired GreetService service) {
+	public MainView() {
+		
+		Usuario_no_registrado nr = new Usuario_no_registrado();
+		nr.getStyle().set("width", "100%");
+		nr.getStyle().set("height", "100%");
+		Usuario_registrado r = new Usuario_registrado();
+		r.getStyle().set("width", "100%");
+		r.getStyle().set("height", "100%");
+		getStyle().set("width", "100%");
+	    getStyle().set("height", "100%");
+		add(nr);
+		Pagina_login pl = new Pagina_login();
+		pl.getStyle().set("width", "100%");
+		pl.getStyle().set("height", "100%");
+		nr.getVaadinButton1().addClickListener(event->{remove(nr);add(pl);});
+		pl.getVaadinButton().addClickListener(event->{remove(pl); add(r);});
+		
+		Lista_publicaciones_item pb = 
+				new Lista_publicaciones_item("Jesus Almendros", "#mds", "tiktok.png", 
+						"videos/tiktok.mp4", "0", "0", "0");
+		
+		Lista_publicaciones_item pb2 = 
+				new Lista_publicaciones_item("Jesus Almendros", "#mds", "tiktok.png", 
+						"videos/tiktok.mp4", "0", "0", "0");
+		
+		Lista_publicaciones l = new Lista_publicaciones();
+		
+		l.anadir_publicacion(pb);
+		l.anadir_publicacion(pb2);
+		nr.getVaadinVerticalLayout3().as(VerticalLayout.class).add(l);
+		
 
-		VistaNoregistrado nr = new VistaNoregistrado();
+		/*VistaNoregistrado nr = new VistaNoregistrado();
 		
 
 		VistaPublicacion vp = new VistaPublicacion();
@@ -76,7 +109,7 @@ public class MainView extends VerticalLayout {
 		nr.getStyle().set("height", "100%");
 
 		this.setSizeFull();
-		add(nr);
+		add(nr);*/
 
 	}
 

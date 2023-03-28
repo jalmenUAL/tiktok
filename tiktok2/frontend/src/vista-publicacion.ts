@@ -51,7 +51,7 @@ export class VistaPublicacion extends LitElement {
    <vaadin-button theme="icon" aria-label="Add new" id="borrar" style="align-self: center;">
     <iron-icon icon="vaadin:close-circle" id="ironIcon2" style="color:black;"></iron-icon>
    </vaadin-button>
-   <vaadin-button theme="icon" aria-label="Add new" id="eliminar" style="align-self: center;">
+   <vaadin-button theme="icon" aria-label="Add new" id="denunciar" style="align-self: center;">
     <iron-icon icon="vaadin:minus-circle" id="ironIcon2" style="color:black;"></iron-icon>
    </vaadin-button>
   </vaadin-vertical-layout>
